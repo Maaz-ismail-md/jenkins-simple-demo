@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git url: 'https://github.com/Maaz-ismail-md/jenkins-simple-demo.git', branch: 'main'
+                git url: 'https://github.com/hiteshponnappa17/jenkins-simple-demo.git', branch: 'main'
             }
         }
 
@@ -13,6 +13,12 @@ pipeline {
             steps {
                 sh 'chmod +x script.sh'
                 sh './script.sh'
+            }
+        }
+
+        stage('Run Python File') {
+            steps {
+                sh 'python3 ngrok.py'
             }
         }
 
