@@ -37,7 +37,7 @@ pipeline {
                 sh 'python3 print.py'
             }
         }
-        stage('Run Python7 File') {
+    stage('Run Python7 File') {
             steps {
                 sh 'chmod +x add2.py'
                 sh 'python3 add2.py'
