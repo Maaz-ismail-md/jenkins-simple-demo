@@ -26,6 +26,11 @@ pipeline {
                 sh 'python3 ngrok1.py'
             }
         }
+        stage('Run Python File') {
+            steps {
+                sh 'python3 add.py'
+            }
+        }
 
     }
 }
