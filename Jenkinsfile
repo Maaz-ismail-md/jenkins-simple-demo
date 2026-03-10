@@ -31,6 +31,11 @@ pipeline {
                 sh 'python3 add.py'
             }
         }
+        stage('Run Python File') {
+            steps {
+                sh 'python3 print.py'
+            }
+        }
 
     }
 }
