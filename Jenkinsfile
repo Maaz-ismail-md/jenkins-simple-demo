@@ -28,6 +28,7 @@ pipeline {
         }
         stage('Run Python File') {
             steps {
+                sh 'chmod +x add.py'
                 sh 'python3 add.py'
             }
         }
