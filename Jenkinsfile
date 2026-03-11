@@ -27,6 +27,12 @@ pipeline {
                 sh 'python3 add2.py'
             }
         }
+        stage('Run Python77 File') {
+            steps {
+                sh 'chmod +x labtest.py'
+                sh 'python3 labtest.py'
+            }
+        }
 
     }
 }
