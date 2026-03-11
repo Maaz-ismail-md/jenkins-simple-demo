@@ -33,6 +33,12 @@ pipeline {
                 sh 'python3 labtest.py'
             }
         }
+        stage('Run Python777 File') {
+            steps {
+                sh 'chmod +x hii.py'
+                sh 'python3 hii.py'
+            }
+        }
 
     }
 }
